@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .Views.views import frontend
+from .Views.views import miPrimeraPlantilla1
 #from AlibabaProjectFrontend.views import miPrimeraPlantilla
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('frondend/', frontend),
+    path('frontend/', frontend),
+    path('', miPrimeraPlantilla1),
 ]
